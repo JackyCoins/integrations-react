@@ -1,6 +1,8 @@
 import "./App.css";
-import { ContentfulPage } from "./pages/ContentfulPage";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
+import { ContentfulPage } from "./pages/ContentfulPage";
+import { TypeformPage } from "./pages/TypeformPage";
 
 const ROUTES = {
   root: "/",
@@ -14,9 +16,9 @@ const ROUTES = {
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="flex flex-col h-full">
         <nav>
-          <ul>
+          <ul className={"grid grid-flow-col"}>
             <li>
               <Link to={ROUTES.root}>Home</Link>
             </li>
@@ -24,7 +26,7 @@ function App() {
               <Link to={ROUTES.contentful}>Contentful</Link>
             </li>
             <li>
-              <Link to={ROUTES.typeform}>typeform</Link>
+              <Link to={ROUTES.typeform}>Typeform</Link>
             </li>
           </ul>
         </nav>
@@ -32,6 +34,7 @@ function App() {
         <Routes>
           <Route path={ROUTES.root} element={<ContentfulPage />} />
           <Route path={ROUTES.contentful} element={<ContentfulPage />} />
+          <Route path={ROUTES.typeform} element={<TypeformPage />} />
         </Routes>
       </div>
     </Router>
