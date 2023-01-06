@@ -40,9 +40,8 @@ const ROUTES = {
 function App() {
   const tabs = Object.entries(ROUTES).map(([key, { title, url }]) => {
     return (
-      <li>
+      <li key={key}>
         <NavLink
-          key={key}
           to={url}
           className={({ isActive }) =>
             isActive ? "text-blue-800" : "text-blue-500"
