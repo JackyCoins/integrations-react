@@ -8,6 +8,7 @@ import {
 
 import { ContentfulPage } from "./pages/ContentfulPage";
 import { TypeformPage } from "./pages/TypeformPage";
+import { HubspotPage } from "./pages/HubspotPage";
 
 const ROUTES = {
   root: {
@@ -65,6 +66,7 @@ function App() {
             <Route path={ROUTES.root.url} element={<ContentfulPage />} />
             <Route path={ROUTES.contentful.url} element={<ContentfulPage />} />
             <Route path={ROUTES.typeform.url} element={<TypeformPage />} />
+            <Route path={ROUTES.hubspot.url} element={<HubspotPage />} />
           </Routes>
         </div>
       </div>
