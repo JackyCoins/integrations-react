@@ -25,6 +25,88 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <!-- Assets -->
+    <script
+            src="https://neo.tildacdn.com/js/tilda-fallback-1.0.min.js"
+            charset="utf-8"
+            async
+    ></script>
+    <link
+            rel="stylesheet"
+            href="%PUBLIC_URL%/tilda/css/tilda-grid-3.0.min.css"
+            type="text/css"
+            media="all"
+            onerror="this.loaderr='y';"
+    />
+    <link
+            rel="stylesheet"
+            href="%PUBLIC_URL%/tilda/css/tilda-blocks-page33161614.min.css?t=1673436279"
+            type="text/css"
+            media="all"
+            onerror="this.loaderr='y';"
+    />
+    <link
+            rel="stylesheet"
+            href="%PUBLIC_URL%/tilda/css/tilda-cover-1.0.min.css"
+            type="text/css"
+            media="all"
+            onerror="this.loaderr='y';"
+    />
+    <script type="text/javascript">
+      (function (d) {
+        if (!d.visibilityState) {
+          var s = d.createElement("script");
+          s.src = "%PUBLIC_URL%/tilda/js/tilda-polyfill-1.0.min.js";
+          d.getElementsByTagName("head")[0].appendChild(s);
+        }
+      })(document);
+      function t_onReady(func) {
+        if (document.readyState != "loading") {
+          func();
+        } else {
+          document.addEventListener("DOMContentLoaded", func);
+        }
+      }
+      function t_onFuncLoad(funcName, okFunc, time) {
+        if (typeof window[funcName] === "function") {
+          okFunc();
+        } else {
+          setTimeout(function () {
+            t_onFuncLoad(funcName, okFunc, time);
+          }, time || 100);
+        }
+      }
+    </script>
+    <script
+            src="%PUBLIC_URL%/tilda/js/tilda-scripts-3.0.min.js"
+            charset="utf-8"
+            defer
+            onerror="this.loaderr='y';"
+    ></script>
+    <script
+            src="%PUBLIC_URL%/tilda/js/tilda-blocks-page33161614.min.js?t=1673436279"
+            charset="utf-8"
+            async
+            onerror="this.loaderr='y';"
+    ></script>
+    <script
+            src="%PUBLIC_URL%/tilda/js/lazyload-1.3.min.js"
+            charset="utf-8"
+            async
+            onerror="this.loaderr='y';"
+    ></script>
+    <script
+            src="%PUBLIC_URL%/tilda/js/tilda-cover-1.0.min.js"
+            charset="utf-8"
+            async
+            onerror="this.loaderr='y';"
+    ></script>
+    <script
+            src="%PUBLIC_URL%/tilda/js/tilda-events-1.0.min.js"
+            charset="utf-8"
+            async
+            onerror="this.loaderr='y';"
+    ></script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
