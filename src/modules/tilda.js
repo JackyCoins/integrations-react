@@ -23,7 +23,7 @@ export const TILDA_HTML = `
       id="recorddiv536023640"
       bgimgfield="img"
       style="
-        height: 30vh;
+        height: 40vh;
         background-image: url('tilda/images/tild3736-3037-4334-b863-353562353039__-__resize__20x__d946dbce69a24e0288d5.jpg');
       "
     >
@@ -33,9 +33,9 @@ export const TILDA_HTML = `
         data-content-cover-id="536023640"
         data-content-cover-bg="tilda/images/tild3736-3037-4334-b863-353562353039__d946dbce69a24e0288d5.jpg"
         data-display-changed="true"
-        data-content-cover-height="30vh"
+        data-content-cover-height="40vh"
         data-content-cover-parallax="fixed"
-        style="height: 30vh"
+        style="height: 40vh"
         itemscope
         itemtype="http://schema.org/ImageObject"
       >
@@ -47,7 +47,7 @@ export const TILDA_HTML = `
       <div
         class="t-cover__filter"
         style="
-          height: 30vh;
+          height: 40vh;
           background-image: -moz-linear-gradient(
             top,
             rgba(0, 0, 0, 0.7),
@@ -78,7 +78,7 @@ export const TILDA_HTML = `
       ></div>
       <div class="t-container">
         <div class="t-col t-col_12">
-          <div class="t-cover__wrapper t-valign_middle" style="height: 30vh">
+          <div class="t-cover__wrapper t-valign_middle" style="height: 40vh">
             <div class="t001 t-align_center">
               <div class="t001__wrapper" data-hook-content="covercontent">
                 <div
@@ -146,7 +146,7 @@ export const TILDA_HTML = `
                 class="t-btn t142__submit t-btn_md"
                 style="color: #000000; border: 3px solid #000000"
               >
-                <span class="t142__text">Click me!</span>
+                <span class="t142__text" id="tilda-button">Click me!</span>
               </div></a
             >
           </div>

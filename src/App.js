@@ -10,6 +10,7 @@ import { ContentfulPage } from "./pages/ContentfulPage";
 import { TypeformPage } from "./pages/TypeformPage";
 import { HubspotPage } from "./pages/HubspotPage";
 import { TildaPage } from "./pages/TildaPage";
+import { BuilderPage } from "./pages/BuilderPage";
 
 const ROUTES = {
   root: {
@@ -68,6 +69,7 @@ function App() {
             <Route path={ROUTES.typeform.url} element={<TypeformPage />} />
             <Route path={ROUTES.hubspot.url} element={<HubspotPage />} />
             <Route path={ROUTES.tilda.url} element={<TildaPage />} />
+            <Route path={ROUTES.builder.url} element={<BuilderPage />} />
           </Routes>
         </div>
       </div>
