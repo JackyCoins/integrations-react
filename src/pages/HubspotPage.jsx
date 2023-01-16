@@ -71,7 +71,7 @@ export const HubspotPage = () => {
     <iframe
       title={"hubspot"}
       src={HUBSPOT_URL}
-      className={"w-full h-full"}
+      className={"w-full h-full rounded-2xl"}
       ref={frameRef}
     />
   ) : null;

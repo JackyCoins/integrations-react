@@ -34,7 +34,7 @@ export const ContentfulPage = () => {
   }
 
   return (
-    <div>
+    <div className={"bg-white rounded-2xl p-6"}>
       <h1 className={"text-6xl text-gray-900"}>{page.title}</h1>
       {page.body.json.content.map((item) => (
         <p className={"text-2xl m-5 p-2 text-gray-800"}>

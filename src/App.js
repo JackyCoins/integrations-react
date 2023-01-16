@@ -13,10 +13,6 @@ import { TildaPage } from "./pages/TildaPage";
 import { BuilderPage } from "./pages/BuilderPage";
 
 const ROUTES = {
-  root: {
-    url: "/",
-    title: "Home",
-  },
   contentful: {
     url: "/contentful",
     title: "Contentful",
@@ -64,7 +60,7 @@ function App() {
 
         <div className={"p-6 flex flex-grow bg-gray-100"}>
           <Routes>
-            <Route path={ROUTES.root.url} element={<ContentfulPage />} />
+            <Route path={"/"} element={<ContentfulPage />} />
             <Route path={ROUTES.contentful.url} element={<ContentfulPage />} />
             <Route path={ROUTES.typeform.url} element={<TypeformPage />} />
             <Route path={ROUTES.hubspot.url} element={<HubspotPage />} />

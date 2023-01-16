@@ -17,6 +17,16 @@ export const BuilderPage = () => {
       })
       .promise()
       .then(setContent);
+
+    const clickHandler = () => {
+      alert("Click button!");
+    };
+
+    document.addEventListener("click-button", clickHandler);
+
+    return () => {
+      document.removeEventListener("click-button", clickHandler);
+    };
   }, []);
 
   return (

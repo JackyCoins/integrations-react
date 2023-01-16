@@ -19,7 +19,7 @@ export const TildaPage = () => {
   return (
     <div
       dangerouslySetInnerHTML={{ __html: TILDA_HTML }}
-      className={"w-full"}
+      className={"w-full bg-white rounded-2xl overflow-hidden"}
     />
   );
 };
