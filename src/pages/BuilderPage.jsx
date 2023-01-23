@@ -1,4 +1,4 @@
-import { builder, BuilderComponent } from "@builder.io/react";
+import { builder, BuilderComponent, Builder } from "@builder.io/react";
 import { useEffect, useState } from "react";
 
 const MODEL_NAME = "page";
@@ -35,3 +35,28 @@ export const BuilderPage = () => {
     </div>
   );
 };
+
+const CustomTicker = ({ title }) => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCount((state) => state + 1);
+    }, 1000);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+
+  return (
+    <div>
+      {title}: {count}
+    </div>
+  );
+};
+
+Builder.registerComponent(CustomTicker, {
+  name: "Custom Ticker",
+  inputs: [{ name: "title", type: "text", defaultValue: "Ticks" }],
+});
